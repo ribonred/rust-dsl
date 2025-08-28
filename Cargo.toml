@@ -8,5 +8,21 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2.100"
-web-sys = { version = "0.3.77", features = ['Document', 'Element', 'HtmlElement', 'HtmlTextAreaElement', 'KeyboardEvent', 'Node', 'Window', 'console'] }
+web-sys = { version = "0.3.77", features = [
+    'Document',
+    'Element',
+    'HtmlElement',
+    'HtmlTextAreaElement',
+    'KeyboardEvent',
+    'Node',
+    'Window',
+    'Selection',
+    'Range',
+    'console',
+    'DomRect',
+    'CssStyleDeclaration',
+] }
 chumsky = "0.9"
+serde = {version = "1.0.219", features = ["derive"]}
+strum = { version = "0.26", features = ["derive"] }
+strum_macros = "0.26"
