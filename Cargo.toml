@@ -8,4 +8,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2.100"
-web-sys = { version = "0.3.77", features = ['Document', 'Element', 'HtmlElement', 'HtmlTextAreaElement', 'Node', 'Window', 'console'] }
+web-sys = { version = "0.3.77", features = ['Document', 'Element', 'HtmlElement', 'HtmlTextAreaElement', 'KeyboardEvent', 'Node', 'Window', 'console'] }
+chumsky = "0.9"
