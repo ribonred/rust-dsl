@@ -1,12 +1,13 @@
 use wasm_bindgen::JsCast;
 use wasm_bindgen::prelude::*;
+pub mod header_auto_complete;
 pub mod import;
 pub mod keys;
-pub mod style;
 pub mod layout; // new module for layout & line population
 pub mod line_handlers;
 pub mod log;
-pub mod header_auto_complete;
+pub mod parser;
+pub mod style; // include parser module for native tests
 pub use line_handlers::create_line;
 
 use crate::layout::{init, inject_base_styles};
